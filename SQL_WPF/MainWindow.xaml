@@ -1,0 +1,44 @@
+﻿<Window x:Class="SQL_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQL_WPF"
+        mc:Ignorable="d"
+        Title="SQL_Frog_15615002 강현욱" Height="495.333" Width="348.333" ResizeMode="NoResize">
+    <Grid Margin="0,0,3.667,0" Height="465" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="93*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="117*"/>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="166*"/>
+            <RowDefinition Height="45.333"/>
+        </Grid.RowDefinitions>
+        <Label Content="Database" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.493,2.979" Height="26" Width="60" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="txtblock_dbname"  Grid.Column="2" Grid.Row="0" TextWrapping="Wrap" Text="선택된 DB 파일명 표시" RenderTransformOrigin="0.52,0.286" Margin="0,4,113.667,16"/>
+        <Button Content="database 열기" Grid.Column="2" Grid.Row="0" Click="Button_Click_1" Margin="171,0,18.667,0" Height="22" VerticalAlignment="Top"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Query" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.493,2.979" Height="26" Width="43" Margin="0,1,0,0" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txt_Query" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="2" KeyDown="Txt_Query_KeyDown" Margin="1,5,18.667,68.667" Grid.Row="1" />
+        <Button x:Name="btn_help" Content="도움말" Click="Btn_help_Click" Grid.Column="2" Grid.Row="1" Margin="0,0,0,28.667" Width="90" HorizontalAlignment="Left" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="btn_action" Content="실행" Click="Button_Click" Grid.Column="2"  Grid.Row="1" Margin="0,0,18.667,28.667" HorizontalAlignment="Right" Width="90" Height="30" VerticalAlignment="Bottom"/>
+
+        <Label Content="Recent&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.493,2.979" Grid.Row="2" Grid.Column="0" Height="42" Width="47" Margin="0,0.333,0,0" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="list_Recent" RenderTransformOrigin="-1.225,0.376" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectionChanged="List_Recent_SelectionChanged" Grid.Row="2" Grid.Column="2" Height="76" VerticalAlignment="Top" Margin="0,0.333,19.667,0" />
+
+        <Label Content="Table&#xA;" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="0.493,2.979" Height="42" Width="39" Margin="0,1,0,0" Grid.ColumnSpan="2"/>
+        <DataGrid ItemsSource="{Binding dt}" x:Name="dataGrid_table" CanUserResizeRows="false" Grid.Column="2" Grid.Row="3" Height="164" VerticalAlignment="Top" Margin="0,1,19.667,0" />
+        <TextBlock x:Name="txtBlock_dbcheck" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Width="89" Margin="1,25,0,0" Text="DB연결되지않음" />
+
+        <Label Grid.Column="1" Grid.Row="4" Content="data개수"/>
+        <TextBlock x:Name="txtBlock_count" Grid.Column="2" Grid.Row="4" Margin="0,5,198.667,9.333" />
+
+    </Grid>
+
+</Window>
+    

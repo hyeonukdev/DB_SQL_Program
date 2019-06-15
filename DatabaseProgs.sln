@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalDB", "LocalDB\LocalDB.csproj", "{3577044D-2BEF-4E8D-A78B-2D3D9831415B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL_WPF", "SQL_WPF\SQL_WPF.csproj", "{A861622B-3E95-45D1-8264-904A0EA64081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Debug|x86.ActiveCfg = Debug|x86
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Debug|x86.Build.0 = Debug|x86
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Release|Any CPU.ActiveCfg = Release|x86
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Release|x86.ActiveCfg = Release|x86
+		{3577044D-2BEF-4E8D-A78B-2D3D9831415B}.Release|x86.Build.0 = Release|x86
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Debug|x86.Build.0 = Debug|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Release|x86.ActiveCfg = Release|Any CPU
+		{A861622B-3E95-45D1-8264-904A0EA64081}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90CC780E-37E1-42E5-BB59-A410125276CA}
+	EndGlobalSection
+EndGlobal
